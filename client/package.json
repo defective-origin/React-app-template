@@ -1,0 +1,84 @@
+{
+  "name": "dashboard-client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint:es": "eslint . --ext .ts --ext .tsx",
+    "lint:style": "stylelint src/**/*{.css,.scss}",
+    "lint:style:fix": "stylelint src/**/*{.css,.scss} --fix",
+    "check-changes": "yarn lint:es && yarn lint:style && yarn test --watchAll=false && yarn build",
+    "messages:extract": "formatjs extract"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn check-changes",
+      "pre-push": "yarn check-changes",
+      "pre-merge-commit": "yarn check-changes"
+    }
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.5.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-intl": "^5.10.14",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
+    "superagent": "^6.1.0",
+    "web-vitals": "^0.2.4"
+  },
+  "devDependencies": {
+    "@formatjs/cli": "^3.0.1",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.53",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-redux": "^7.1.15",
+    "@types/redux": "^3.6.0",
+    "@types/redux-thunk": "^2.1.0",
+    "@types/superagent": "^4.1.10",
+    "@typescript-eslint/eslint-plugin": "^4.11.1",
+    "@typescript-eslint/parser": "^4.11.1",
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "husky": "^4.3.6",
+    "node-sass": "4.14.1",
+    "prettier": "^2.2.1",
+    "react-scripts": "4.0.1",
+    "stylelint": "^13.8.0",
+    "stylelint-config-airbnb": "^0.0.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-order": "^4.1.0",
+    "stylelint-prettier": "^1.1.2",
+    "stylelint-scss": "^3.18.0",
+    "typescript": "^4.0.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

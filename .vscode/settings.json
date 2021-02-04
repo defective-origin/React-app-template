@@ -1,0 +1,20 @@
+{
+    "files.eol": "\r\n",
+    "prettier.endOfLine": "crlf",
+    "editor.tabSize": 2,
+
+    "eslint.workingDirectories": [ "./client", "./server" ],
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescriptreact",
+        "typescript",
+    ],
+
+    "scss.validate": false,
+    "css.validate": false,
+    "less.validate": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.stylelint": true
+    },
+}
