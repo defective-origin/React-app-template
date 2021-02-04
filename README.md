@@ -7,7 +7,7 @@
   * (-) config api
   * (-) assembly api 
 * (+) client
-	* (-) common - contains constants, helpers(data handlers), HOCs, models/entities, services, and other general code
+	* (+) common - contains constants, helpers(data handlers), HOCs, models/entities, services, and other general code
 	* (-) shared - contains code that can be moved to package(npm)
 	* (+) assets - contains fonts, images, styles that are loaded with application
 	* (+) core - contains tools and settings without which the application cannot or should not work
