@@ -1,6 +1,4 @@
 {
-    "files.eol": "\r\n",
-    "prettier.endOfLine": "crlf",
     "editor.tabSize": 2,
 
     "eslint.workingDirectories": [ "./client", "./server" ],

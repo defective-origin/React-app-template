@@ -135,7 +135,7 @@
 	* (-) account/user
 	* (+) i18n
 	* (+) l10n
-	* (-) toster
+	* (-) toast
 	* (-) logger
 	* (-) configs/settings
 
